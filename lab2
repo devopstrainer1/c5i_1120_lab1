@@ -5,3 +5,125 @@ You have two sets of information to generate. The first contains the workshop de
 There is a complication. Some attendees did not answer the follow-up survey. For this exercise, the training team defines a confirmed application as a survey response that includes a concrete example of using a workshop technique at work. Your job is to recommend a pair that fits the budget, explain the evidence behind your choice, and show how much confidence leadership should place in the pilot results.
 
 Your deliverable is a five-slide presentation. Ask leadership to approve two named workshops, state the combined cost and remaining budget, compare the options using actual denominators, and propose a way to improve follow-up measurement next quarter.
+
+
+
+----
+
+Proposed Solution
+
+----
+
+Prompt 1 - creating some fictional data
+
+I am practising to make a training budget decision using some fictional data . Create two tables for Northbridge Services. use only make up data and do not include any employee name.
+
+Table 1 - Workshop Options
+
+Use these four workshops and there quoted cost to run again next quarter
+
+WorkShop ID | WorkShop Name | Category | Cost to run again
+W01 | AI for everyday | Pratical AI | INR 80,000
+W02 | Decision making | Business Skill | INR 35,000
+W03 | AI for meeting | Practical AI | INR 40,000
+W04 | Communication | Business Skill | INR 40,000
+
+Table 2 - Last quarter pilot results
+
+Create two rows , one for operations one for client services.
+
+Include
+
+- Workshop ID
+- Department
+- People who attended
+- People who answered the follow-up survey
+- People who gave specific example of using what they learned
+- Average satsfaction score ( on scale of 5)
+
+
+Split the totals between two department
+
+
+WorkShop ID | People Who attended | people who answered survey | people who gave a work example|
+W01 | 40 | 20 | 14
+W02 | 30 | 24 | 15
+W03 | 35 | 28 | 9
+W04 | 25 | 20 | 7
+
+
+Give the two departments different attendance numbers for each workshop. Make sure the two department rows add up to totals shown above.
+
+User average satisfaction score between 3.8 to 4.5 out of 5.
+
+Show both tables. Then show a short check confirming that overall there are eight rows and the department counts add up to workshop totals.
+Stop after checking the data. We will male the decision next
+
+
+-----
+
+Prompt 2 
+
+Act as a learning and development analyst. use the two tables we just created
+
+Leadership has INR 1,20,000 to run exactly two workshops next quarter. At least one of them must be in AI category. Leadership main goal is employees use what they learned at work within 30 days
+
+
+1> Summarise each workshop
+
+Match the workshop optiomns and pilot results using workshop ID. Add the counts from Operatios and Client Services before calculating percantages. Use the quoted cost once per workshop.
+
+Show these mesaures for each workshop:
+
+- survey response rate = people who answered survey / people who attended
+- Share of survey respondents who gave a work example = people who gave a work example / people who attended the survey
+- share of everyone who attended and gave a work example = people who gave a work example / people who attended
+- satisfaction score
+
+Show the counts behind the percentage, such as 14 out 20 ( 70% ).
+
+2> Compare the possible pairs
+
+List all ways to choose possible worksops. For each pair, show the combined cost, how much budget would be left or how far it exceeds, whether it includes a workshop in AI category
+
+Also show the combined pilot count of people who gave a work example and the share of pilot attendance with a work example. Calculate the share by adding the counts first, then dividing. Treat them as totals across workshop attendance becuse the data does not identify whether someone attended both workshops.
+
+3> Recommend a pair
+
+Use the pilot evidence on workplace use as the main reason of your choice. Compare the recommended pair with the strongest affordable alternative that includes a AI workshop. Explain the tradeoff in plain English. Explain how satisfaction score, percentage of people in survey who gave a work example and percentage of people with survey response rate adds context to this decision.
+
+Treat workspace use as unknown for people who did not answer. Describe what happened in the pilot without presenting it as predictoon for next quarter
+
+Finish with one practical way to improve the 30 day follow up next time
+
+
+-----
+
+
+prompt 3 - create a ppt
+
+----
+
+Create a four slide presentation for the head of learning & development at Northbridge services. Use the workshop analysis from the previous message . The presentation should help leadership to decide which two workshops to fund.
+
+SLide 1 - the decision
+
+Name two recommended workshops. Show the total cost, remaining budget, and the approval you are asking leadership to give. Explain the recommendation in one sentence
+
+Slide 2 - What people used at work
+
+Create a horizontal bar chart comparing four workshops. Each bar should show the share of everyone who attended and gave a specific work example. Label each bar with counts and percentage.
+
+Slide 3 - What the budget can buy
+
+Compare the pairs that meet both funding rules. Show the workshops in each pair, total cost, remaining budget, amd how many participants gave a work example across two workshops.
+Explain the main tradeoff between recommended pair and strongest alternative
+
+Slide 4 - What happens next
+
+Recreate the funding decision in one line. Prepare a simple 30 day follow up that ask each attendee for one specific example of how they used the workshop at work, Show which two numbers teh training team should report together: the survey response rate and share of all attendees who gave a work example.
+
+Use short slide titles. Keep last quaters result and next quarter budget clearly labelled.
+
+If you can create a downloadable PowerPoint, provide a .pptx with editable text and values. Provide short speaker notes for each slide
+
