@@ -1,0 +1,7 @@
+You manage learning and development at Northbridge Services, a fictional professional services firm. Last quarter, the company piloted four workshops for non-technical employees. Leadership has approved ₹1,20,000 to repeat workshops next quarter. It wants to fund exactly two workshops, with at least one focused on practical AI use.
+
+You have two sets of information to generate. The first contains the workshop descriptions and the quoted cost to repeat each workshop. The second contains last quarter’s pilot results, recorded separately for two departments. Leadership cares about employees using what they learned at work within 30 days. Attendance and satisfaction are useful supporting measures.
+
+There is a complication. Some attendees did not answer the follow-up survey. For this exercise, the training team defines a confirmed application as a survey response that includes a concrete example of using a workshop technique at work. Your job is to recommend a pair that fits the budget, explain the evidence behind your choice, and show how much confidence leadership should place in the pilot results.
+
+Your deliverable is a five-slide presentation. Ask leadership to approve two named workshops, state the combined cost and remaining budget, compare the options using actual denominators, and propose a way to improve follow-up measurement next quarter.
