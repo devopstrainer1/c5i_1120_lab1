@@ -9,3 +9,60 @@ Generate synthetic data for the 20 cases. Each case should have an ID, sales cha
 
 
 Your deliverable is a one-page dashboard showing the total open backlog, number of breached cases, number due today, and total refund amount waiting. Include a blocker breakdown, the five cases to work on today, and one process improvement to test next week. Show enough detail for your manager to verify how you selected the five cases.
+
+------------------
+
+### Proposed Solution
+
+### prompt 1--- generating data
+
+Create a sythetic dataset for harbor & home, a fictional online retailer. use fictional case IDs and no personal data
+
+Create exactly 20 open refund cases in one markdown tables with these columns:
+Case ID, Sales Channel, Refund Reason, Refund Amount(INR), Days Opne , Current Blocker
+
+Use unique IDs from REF-001 to REF-020. Use positive whole-number refund amounts
+
+Use exactly these blockers and counts:-
+- Finance approval - 8 cases
+- Warehouse verification - 5 cases
+- Customer information - 4 cases
+- No blocker - 3 cases
+
+Exactly 9 cases must be open for more than 5 days, exactly 3 must open for 5 days and other 8 must be open for less than 5 days.
+
+Give exactly four cases an age greater than 7 days . Give two cases an age of exactly 5 days, with different refund amounts. Include at least one high value case that is only two days old.
+
+After the table, report two count, count by age group and the count by blocker. Report from the actual rows any mismatch before showing the final table. Do not rank cases or recommend any action yet
+
+----------------------
+
+### prompt 2 - backlog analysis and recommended actions
+
+
+
+Use the final 20 row refund table from the previous message as the source. Keep the original records unchanged
+
+Calculate the number of open cases, the number breached( more than 5 days), the number due today( exactly 5 days), and the total amount waitint in INR.
+Show the count and refund value by blocker. Cross check that the blocker counts and values add up to the corresponding source data table.
+
+Show all breached data in priority order so I can verify the cutoff. Sort by days descending, refund amount descending, then case ID ascending.
+Selct the first five. For each show the case ID, days open, amount, blocker, and one next action. Route finance and warehouse blockers to the corresponding team, missing information to customer support to follow up with customer and unblocked cases to refund processing for final review.
+
+Explain which 7 day case takes fifth place and why. Recommend one process improvememnt to test next week and suggest one measure to track durinh the test.
+
+Clearly distinguish what the table says to what you are proposing.
+
+-----
+
+### prompt 3 - dashboard creation
+
+Create a one page dashboard titled "Refund backlog"
+
+using the verified analysis
+
+At the top, show four metrics, Open cases, Breached, Due today and total refund amound waiting. Below that show case count by blocker in a horizontal bar chart or a compact table. Then show the five priority cases with there next actions. At the bottom include the proposed recommendation and its success measure.
+
+If you can create a downloadable HTML, make it a standalone dashboard that opens in browser , otherwise present dashboard in markdown.
+
+Use only calculate values from the source table
