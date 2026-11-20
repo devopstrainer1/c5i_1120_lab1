@@ -1,0 +1,11 @@
+##Exercise 1 — The Refund Backlog 
+
+You manage customer support for Harbor & Home, a fictional online retailer. Your team has 20 refund requests that are still open. Finance has limited capacity today, and the support team can actively work on only five cases. The head of operations wants to know which five cases to prioritise today and what change could help prevent similar delays next week. 
+
+Generate synthetic data for the 20 cases. Each case should have an ID, sales channel, refund amount, reason, number of days open, and current blocker. Use a mix of cases waiting for finance approval, warehouse checks, customer information, and cases with no blocker. Apply these operating rules:
+* A case has breached the service target if it has been open more than 5 days. A case open exactly 5 days is due today.
+* Prioritise breached cases first. Within that group, work the oldest cases first. If cases have the same age, work the higher-value refund first. If both values match, use the case ID in ascending order.
+* For a blocked case, the next action is to follow up with the team or person who can clear the blocker. A case can be prioritised even if the refund cannot be paid today. 
+
+
+Your deliverable is a one-page dashboard showing the total open backlog, number of breached cases, number due today, and total refund amount waiting. Include a blocker breakdown, the five cases to work on today, and one process improvement to test next week. Show enough detail for your manager to verify how you selected the five cases.
